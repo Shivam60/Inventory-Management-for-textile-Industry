@@ -1,0 +1,34 @@
+﻿<Window x:Class="Inventory_Management_for_textile_Industry.Manufacturer_details"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Inventory_Management_for_textile_Industry"
+        mc:Ignorable="d"
+        Title="Manufacturer_details" Height="377" Width="569"
+        Loaded="MainWindow_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="297*"/>
+            <ColumnDefinition Width="104*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Manufacturer Details" HorizontalAlignment="Left" Margin="110,10,0,0" VerticalAlignment="Top" Height="47" Width="354" Grid.ColumnSpan="2" FontSize="36" FontFamily="Microsoft Sans Serif" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Name" HorizontalAlignment="Left" Height="27" Margin="30,105,0,0" VerticalAlignment="Top" Width="115" FontWeight="Bold" FontFamily="Microsoft Sans Serif"/>
+        <Label x:Name="label2" Content="Manufacturer ID" HorizontalAlignment="Left" Height="28" Margin="30,77,0,0" VerticalAlignment="Top" Width="105" FontWeight="Bold" FontFamily="Microsoft Sans Serif"/>
+        <Label x:Name="label3" Content="Contact Number" HorizontalAlignment="Left" Height="27" Margin="30,132,0,0" VerticalAlignment="Top" Width="105" FontWeight="Bold" FontFamily="Microsoft Sans Serif"/>
+        <Label x:Name="label4" Content="Product " HorizontalAlignment="Left" Height="28" Margin="162,160,0,0" VerticalAlignment="Top" Width="115" FontWeight="Bold" FontFamily="Microsoft Sans Serif"/>
+        <Label x:Name="label5" Content="Location" HorizontalAlignment="Left" Height="23" Margin="30,187,0,0" VerticalAlignment="Top" Width="115" FontWeight="Bold" FontFamily="Microsoft Sans Serif"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="162,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Microsoft Sans Serif"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="162,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Microsoft Sans Serif"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="162,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Microsoft Sans Serif"/>
+        <RadioButton x:Name="radioButton" Content="Read" HorizontalAlignment="Left" Margin="303,132,0,0" VerticalAlignment="Top" Width="50" Checked="radioButton_Checked" IsChecked="True" FontWeight="Bold" FontFamily="Microsoft Sans Serif"/>
+        <RadioButton x:Name="radioButton1" Content="Write" Grid.Column="1" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top" Width="51" Checked="radioButton1_Checked" FontWeight="Bold" FontFamily="Microsoft Sans Serif"/>
+        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="303,160,0,0" VerticalAlignment="Top" Width="80" Click="button_Click" FontFamily="Microsoft Sans Serif" FontWeight="Bold" FontSize="22" Height="43"/>
+        <ComboBox x:Name="comboBox" Text="Manufacturer ID" HorizontalAlignment="Left" Margin="162,77,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox_SelectionChanged" IsEditable="True"/>
+        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="30,270,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click" Height="35" FontFamily="Microsoft Sans Serif" FontWeight="Bold" FontSize="22"/>
+        <Button x:Name="button2" Content="Exit" Grid.Column="1" HorizontalAlignment="Left" Margin="47,270,0,0" VerticalAlignment="Top" Width="90" Height="35" FontFamily="Microsoft Sans Serif" FontWeight="Bold" FontSize="22" Click="button2_Click"/>
+        <ComboBox x:Name="comboBox1" Text="Product ID" HorizontalAlignment="Left" Margin="37,160,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" FontWeight="Bold" SelectionChanged="comboBox1_SelectionChanged"/>
+        <Button x:Name="button4" Content="Delete" Grid.Column="1" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="75" Height="43" FontWeight="Bold" FontFamily="Microsoft Sans Serif" FontSize="22" Click="button4_Click"/>
+
+    </Grid>
+</Window>
